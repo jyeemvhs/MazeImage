@@ -1,0 +1,69 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Fri Sep 27 18:23:59 1996           **
+;**                                                                **
+;** Diamond Version: (32) 1.00.0520 (12/16/94)                     **
+;**                                                                **
+;*** BEGIN **********************************************************
+[Source Media Descriptions]
+; <disk number>, <disk label>, <file>, <path>
+ "1","Microsoft GIF Animator Setup","Setup.exe","."
+
+[Default File Settings]
+"STF_BACKUP" = ""
+"STF_COPY" = "YES"
+"STF_DATE" = ""
+"STF_DECOMPRESS" = ""
+"STF_OVERWRITE" = "OLDER"
+"STF_READONLY" = ""
+"STF_ROOT" = "YES" 
+"STF_SETTIME" = ""
+"STF_TIME" = ""
+"STF_VITAL" = ""
+
+;************* INF File list *****************
+
+[Setup]
+ 1,setup.exe,,,,1996-09-27,,1033,,,,,,,,73504,SYSTEM,,,1.20.0.2402,
+ 1,setup.ini,,,,1996-09-27,,,,,,,,,,149,,,,,
+ 1,setup.tdf,,,,1996-09-27,,,,,,,,,,84,,,,,
+ 1,setup.lst,,,,1996-09-27,,,,,,,,,,539,,,,,
+
+[ACME]
+"ACMSETUP_EXE" = 1,acmsetup.exe,,,,1996-09-27,,1033,,,,GifACME.exe,!ROOT,,,331776,SYSTEM,,,1.20.0.2402,
+ 1,acmsetup.hlp,,,,1996-09-27,,,,,,,,,,18397,SYSTEM,,,,
+ 1,mssetup.dll,,,,1996-09-27,,1033,,,,,,,,252416,SYSTEM,,,1.20.0.2402,
+ 1,msgifcah.dll,,,,1996-09-27,,1033,,,,,,,,140288,SYSTEM,,,1.20.0.2402,
+ 1,msgif_bb.dll,,,,1996-09-27,,,,,,,,,,219136,SYSTEM,,,1.20.0.1820,
+ 1,GIFACME.inf,,,,1996-09-27,,,,,,,,,,2884,,,,,
+
+[Retail]
+"gifview_exe" = 1,GIFView.exe<GIFAnimator.exe>,,,,1996-09-27,,1033,,,,,,,,536064,,,,1.0.0.101,
+"gifview_hlp" = 1,GIFView.hlp<GIFAnimator.hlp>,,,,1996-09-27,,,,,,,,,,17642,,,,,
+"gifview_cnt" = 1,GIFView.cnt<GIFAnimator.cnt>,,,,1996-09-27,,,,,,,,,,248,,,,,
+"README.WRI" = 1,Readme.wri,,,,1996-09-27,,,,,,,,,,10752,,,,,
+
+[Samples]
+"AIRPLANE_GIF" = 1,Airplane.gif,,,,1996-09-27,,,,,,,,,,35480,,,,,
+"BUTTON_GIF" = 1,Button.gif,,,,1996-09-27,,,,,,,,,,3051,,,,,
+"CIRCLES_GIF" = 1,Circles.gif,,,,1996-09-27,,,,,,,,,,25765,,,,,
+"COMING_GIF" = 1,Coming.gif<Comingsoon.gif>,,,,1996-09-27,,,,,,,,,,46103,,,,,
+"DALI_GIF" = 1,Dali.gif,,,,1996-09-27,,,,,,,,,,21839,,,,,
+"DINER_GIF" = 1,Diner.gif,,,,1996-09-27,,,,,,,,,,49210,,,,,
+"DROPPER_GIF" = 1,dropper.gif,,,,1996-09-27,,,,,,,,,,19095,,,,,
+"LIGHTBLB_GIF" = 1,Lightblb.gif<Lightbulb.gif>,,,,1996-09-27,,,,,,,,,,6734,,,,,
+"NEW_GIF" = 1,New.gif,,,,1996-09-27,,,,,,,,,,17000,,,,,
+"NEXT_GIF" = 1,next.gif,,,,1996-09-27,,,,,,,,,,28065,,,,,
+"PREVIOUS_GIF" = 1,previous.gif,,,,1996-09-27,,,,,,,,,,25830,,,,,
+"TIEDYE_GIF" = 1,Tiedye.gif,,,,1996-09-27,,,,,,,,,,77449,,,,,
+"WTODAY_GIF" = 1,Wtoday.gif<Wheretoday.gif>,,,,1996-09-27,,,,,,,,,,21460,,,,,
+
+[DelHelp]
+"GIFVIEW_GID" = 1,GIFAnimator.gid,,,,,,,,,,,,,,,,,,,
+"GIFVIEW_FTS" = 1,GIFAnimator.fts,,,,,,,,,,,,,,,,,,,
+"GIFVIEW_FTG" = 1,GIFAnimator.ftg,,,,,,,,,,,,,,,,,,,
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Fri Sep 27 18:23:59 1996           **
+;**                                                                **
+;*** END ************************************************************

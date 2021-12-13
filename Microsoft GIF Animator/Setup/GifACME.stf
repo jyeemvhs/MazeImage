@@ -1,0 +1,74 @@
+App Name	Microsoft GIF Animator	
+App Version	1.0.0927	
+Frame Bitmap	"msgif_bb.dll, 121,122"	
+Frame Caption	Microsoft GIF Animator Setup	
+Dialog Caption Base	Microsoft GIF Animator	
+Usage String	Run Setup.exe \n Admin Mode not supported.	
+About Box String	Microsoft GIF Animator\n\nCopyright (C) 1996 Microsoft Corporation.	
+Check Modules		
+Source Directory	C:\DOCUME~1\JEFF\LOCALS~1\TEMP\MSE69.TMP\	
+MSAPPS Mode	local	
+MSAPPS Connect	server	
+Inf File Name	GIFACME.inf	
+Help File Name	ACMSETUP.HLP	
+Setup Status	"irûE°ù±¢ÊlvéçÉƒ}Ây±@Á°⁄Hï‹“≥ÌB«Ô¯±Â…ùQ-?^ÿ?Î÷h“ù÷KL}”°œ≤≈D√©íJò?Ü∞`)2–‚Y7À∞∏ãû6êÀW4&ËÓ¥'gÖ›¿±Ê¥”÷ôs1ÆéÚd?@8∆Mk∏#ø›œ22R¯c¥såß¡çÎ""U∂ÿˇ[ÑVàﬁÜëôΩ?JÀå5™(ª•aûn¬â¯ŒÇ2CJõOÈ"	
+Maximum Object ID	800	
+Admin Mode Root Object ID		
+Floppy Mode Root Object ID	20 : 10	
+Network Mode Root Object ID		
+Maintenance Mode Root Object ID	30 : 10	
+Network Maintenance Mode Root Object ID		
+Batch Mode Root Object ID	40 : 10	
+Suppress Copy Disincentive Dialogs		
+Suppress Serial Number Dialog		
+Install Date	2011.03.29.21.34.26	
+Setup Version	1.20.0.2402	
+Check Modules2		
+
+
+ObjID	Checkbox State	Title	Description	Object Type	Object Data	Bitmap Id	Vital Attribute	Shared Attribute	Configurable Directory	Destination Directory	Check Directory	Installed By	Install Data	Install Directory
+10		Microsoft GIF Animator		AppSearch	"%p\Microsoft GIF Animator,GIFAnimator.exe,,128,yes,no,"					C:\Program Files\Microsoft GIF Animator\		us		C:\Program Files\Microsoft GIF Animator\
+20	yes	Floppy Install		AppMainDlg	50				yes	C:\Program Files\Microsoft GIF Animator\		us		C:\Program Files\Microsoft GIF Animator\
+30		Maintenance Mode		Group	120 310 410 710 70					C:\Program Files\Microsoft GIF Animator\				
+40	yes	Batch Install		Group	50									
+50	yes	&Complete	A complete installation of Microsoft GIF Animator.	Group	60 70	"msgif_bb.dll, 111"			yes			us		C:\Program Files\Microsoft GIF Animator\
+60	yes	Microsoft GIF Animator	Installs the Shipping version of Microsoft GIF Animator.	Group	110 310 410 710				no	%d		us		C:\Program Files\Microsoft GIF Animator\
+70	yes	Setup Files		Group	510				no	%d		us		C:\Program Files\Microsoft GIF Animator\
+110				Group	130 140 150 180 190							us		C:\Program Files\Microsoft GIF Animator\
+120		Find Install Directory (Remove Only)		Group	130 140 180					%d				
+130				CustomAction	"""msgifcah.dll"",RootDir,%m"							us		C:\
+140				CustomAction	"""msgifcah.dll"",GetPathFromReg,""HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\MMFiles,"""					%130\Multimedia Files		us		C:\Multimedia Files\
+150				Depend	140 ? : 160 170							us	No	C:\Program Files\Microsoft GIF Animator\
+160				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Windows\CurrentVersion\MMFiles"","""",""%s"","""""					%130\Multimedia Files		us		C:\Multimedia Files\
+170				CreateDir	Multimedia Files					%130		us		C:\
+180				CustomAction	"""msgifcah.dll"",GetPathFromReg,""HKEY_LOCAL_MACHINE,Software\Microsoft\Windows\CurrentVersion\MMFiles,MyMediaPath"""					%140\My Media		us		C:\Multimedia Files\My Media\
+190				Depend	180 ? : 200 210							us	No	C:\Program Files\Microsoft GIF Animator\
+200				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Windows\CurrentVersion\MMFiles"",""MyMediaPath"",""%s"","""""					%140\My Media		us		C:\Multimedia Files\My Media\
+210				CreateDir	My Media					%140		us		C:\Multimedia Files\
+310				Group	320 330 340 350 620 630 640							us		C:\Program Files\Microsoft GIF Animator\
+320				CopySection	Retail					%d		us		C:\Program Files\Microsoft GIF Animator\
+330				CustomAction	"msgifcah.dll,RemoveHelpAuxFile,DelHelp;GIFVIEW_GID"					%320		us		C:\Program Files\Microsoft GIF Animator\
+340				CustomAction	"msgifcah.dll,RemoveHelpAuxFile,DelHelp;GIFVIEW_FTS"					%320		us		C:\Program Files\Microsoft GIF Animator\
+350				CustomAction	"msgifcah.dll,RemoveHelpAuxFile,DelHelp;GIFVIEW_FTG"					%320		us		C:\Program Files\Microsoft GIF Animator\
+410				Group	420					%140		us		C:\Multimedia Files\
+420				CopySection	Samples					%d\Graphics\Web\Animations\Microsoft GIF Animator		us		C:\Multimedia Files\Graphics\Web\Animations\Microsoft GIF Animator\
+510				Group	520 530 540 610							us		C:\Program Files\Microsoft GIF Animator\
+520				CopySection	ACME					%d\Setup		us		C:\Program Files\Microsoft GIF Animator\Setup\
+530				WriteTableFile	GifACME.stf					%d\Setup		us		C:\Program Files\Microsoft GIF Animator\Setup\
+540				Group	550 560							us		C:\Program Files\Microsoft GIF Animator\
+550				AddRegData	"""LOCAL"",""Software\Microsoft\Windows\CurrentVersion\Uninstall\GIF Animator"",""DisplayName"",""Microsoft GIF Animator"",""REG_SZ"""							us		C:\Program Files\Microsoft GIF Animator\
+560				AddRegData	"""LOCAL"",""Software\Microsoft\Windows\CurrentVersion\Uninstall\GIF Animator"",""UninstallString"",""%s\GifACME.exe"",""REG_SZ"""					%d\setup		us		C:\Program Files\Microsoft GIF Animator\setup\
+610				AddProgmanItem	"Microsoft GIF Animator, Microsoft GIF Animator Setup, %s\GifACME.exe, , , 0, , 0, 0, 0"					%d\setup		us		C:\Program Files\Microsoft GIF Animator\setup\
+620				AddProgmanItem	"Microsoft GIF Animator, Microsoft GIF Animator, %s\GIFAnimator.exe, , , 0, , 0, 0, 0"					%d		us		C:\Program Files\Microsoft GIF Animator\
+630				AddProgmanItem	"Microsoft GIF Animator, Microsoft GIF Animator ReadMe, %s\Readme.wri, , , 0, , 0, 0, 0"					%d		us		C:\Program Files\Microsoft GIF Animator\
+640				AddProgmanItem	"Microsoft GIF Animator, Microsoft GIF Animator Help, %s\GIFAnimator.hlp, , , 0, , 0, 0, 0"					%d		us		C:\Program Files\Microsoft GIF Animator\
+710				Group	720 730 740 750 760 770 780 790 800							us		C:\Program Files\Microsoft GIF Animator\
+720				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Microsoft Image Composer\AddIn"",""Microsoft GIF Animator"",""%s\GIFAnimator.exe"",""REG_SZ"""					%d		us		C:\Program Files\Microsoft GIF Animator\
+730				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Microsoft Image Composer\AddIn\Microsoft GIF Animator"",""IndexX"",""00000004"",""REG_DWORD"""					%d		us		C:\Program Files\Microsoft GIF Animator\
+740				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Microsoft Image Composer\AddIn\Microsoft GIF Animator"",""IndexY"",""-1"",""REG_DWORD"""					%d		us		C:\Program Files\Microsoft GIF Animator\
+750				AddRegData	"""LOCAL"",""SOFTWARE\Microsoft\Microsoft Image Composer\AddIn\Microsoft GIF Animator"",""Type"",""00000000"",""REG_DWORD"""					%d		us		C:\Program Files\Microsoft GIF Animator\
+760				AddRegData	"""CURRENT"",""Software\Microsoft\Microsoft GIF Animator\Settings"",""OpenDir"",""%s"",""REG_SZ"""					%180		us		C:\Multimedia Files\My Media\
+770				AddRegData	"""CURRENT"",""Software\Microsoft\Microsoft GIF Animator\Settings"",""SaveDir"",""%s"",""REG_SZ"""					%180		us		C:\Multimedia Files\My Media\
+780				AddRegData	"""CURRENT"",""Software\Microsoft\Microsoft GIF Animator\Settings"",""PalLoadDir"",""%s"",""REG_SZ"""					%180		us		C:\Multimedia Files\My Media\
+790				AddRegData	"""CURRENT"",""Software\Microsoft\Microsoft GIF Animator\Settings"",""InsertDir"",""%s"",""REG_SZ"""					%180		us		C:\Multimedia Files\My Media\
+800				AddRegData	"""CURRENT"",""SOFTWARE\Microsoft\FrontPage\Explorer\Init Commands"",""Microsoft GIF Animator"",""2,,1,4,Microsoft GIF Animator,%s\GIFAnimator.exe,,0,Launch Microsoft GIF Animator"",""REG_SZ"""					%d		us		C:\Program Files\Microsoft GIF Animator\

@@ -1,0 +1,7 @@
+:Base gifanimator.HLP
+:Title Animated GIF Editor
+1 Welcome to GIF Animator=gifIntroduction
+1 Toolbar=gifToolbar
+1 Animation Tab Dialog=gifAnimation_Tab_Dialog
+1 Image Tab Dialog=gifImage_Tab_Dialog
+1 Options Tab Dialog=gifOptions_Tab_Dialog
